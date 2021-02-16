@@ -4,7 +4,7 @@ author: "Yihui Xie"
 date: "`r Sys.Date()`"
 site: bookdown::bookdown_site
 documentclass: book
-bibliography: [book.bib, packages.bib]
+bibliography: [bibliography/book.bib, bibliography/packages.bib]
 biblio-style: apalike
 link-citations: yes
 description: "This is a minimal example of using the bookdown package to write a book. The output format for this example is bookdown::gitbook."
@@ -30,5 +30,5 @@ To compile this example to PDF, you need XeLaTeX. You are recommended to install
 # automatically create a bib database for R packages
 knitr::write_bib(c(
   .packages(), 'bookdown', 'knitr', 'rmarkdown'
-), 'packages.bib')
+), 'bibliography/packages.bib')
 ```
