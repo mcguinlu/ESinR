@@ -45,6 +45,7 @@ jobs:
        uses: Cecilapp/GitHub-Pages-deploy@master
        with:
           build_dir: _book/
+          email: ${{ secrets.EMAIL }}
        env:
           EMAIL: ${{ secrets.EMAIL }}               # must be a verified email
           GH_TOKEN: ${{ secrets.GH_PAT }} # https://github.com/settings/tokens
